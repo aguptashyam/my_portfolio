@@ -1,9 +1,3 @@
-// ============================================================================
-// Portfolio Data Configuration
-// All personal information, projects, skills, and achievements are centralized
-// here for easy maintenance and updates.
-// ============================================================================
-
 export const siteConfig = {
   name: "Anubhav Gupta",
   title: "Anubhav Gupta — Software Engineer",

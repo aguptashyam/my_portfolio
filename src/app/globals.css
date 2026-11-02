@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-/* ============================================================================
-   Design Tokens — Premium Dark Portfolio
-   ============================================================================ */
-
 @theme {
   --color-bg-primary: #09090b;
   --color-bg-secondary: #111113;
@@ -44,10 +40,6 @@
   --radius-2xl: 1.5rem;
 }
 
-/* ============================================================================
-   Base Styles
-   ============================================================================ */
-
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -66,10 +58,12 @@ body {
   color: white;
 }
 
-/* ============================================================================
-   Custom Scrollbar
-   ============================================================================ */
+/* Hide Next.js development tools indicator */
+nextjs-portal {
+  display: none !important;
+}
 
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -87,20 +81,14 @@ body {
   background: var(--color-border-light);
 }
 
-/* ============================================================================
-   Focus Styles
-   ============================================================================ */
-
+/* Focus outline */
 *:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
   border-radius: var(--radius-sm);
 }
 
-/* ============================================================================
-   Typography Utilities
-   ============================================================================ */
-
+/* Typography Utilities */
 .text-gradient {
   background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-text-secondary) 100%);
   -webkit-background-clip: text;
@@ -115,10 +103,7 @@ body {
   background-clip: text;
 }
 
-/* ============================================================================
-   Card Styles
-   ============================================================================ */
-
+/* Card Tokens */
 .card {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
@@ -132,10 +117,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* ============================================================================
-   Section Styles
-   ============================================================================ */
-
+/* Section Layout */
 .section-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -154,10 +136,7 @@ body {
   }
 }
 
-/* ============================================================================
-   Reduced Motion
-   ============================================================================ */
-
+/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -169,10 +148,7 @@ body {
   }
 }
 
-/* ============================================================================
-   Ambient Glow Effect
-   ============================================================================ */
-
+/* Ambient Visual Effects */
 .glow-accent {
   box-shadow: 0 0 60px rgba(99, 102, 241, 0.08), 0 0 120px rgba(99, 102, 241, 0.04);
 }
@@ -196,10 +172,6 @@ body {
   opacity: 1;
 }
 
-/* ============================================================================
-   Loading Skeleton
-   ============================================================================ */
-
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
@@ -220,10 +192,6 @@ body {
   animation: shimmer 2s infinite;
   border-radius: var(--radius-md);
 }
-
-/* ============================================================================
-   Noise Texture Overlay
-   ============================================================================ */
 
 .noise-overlay {
   position: fixed;
